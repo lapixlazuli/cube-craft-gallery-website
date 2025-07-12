@@ -3,7 +3,7 @@ import { Instagram, MessageSquare, Mail } from "lucide-react";
 const Footer = () => {
   const quickLinks = [
     { name: "Home", href: "#home" },
-    { name: "Portfolio", href: "#portfolio" },
+    { name: "Portfolio", href: "/portfolio" },
     { name: "Creative Dimensions", href: "#dimensions" },
     { name: "Contact", href: "#contact" },
   ];

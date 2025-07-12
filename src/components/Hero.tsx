@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-cubes.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Image */}
@@ -40,11 +42,11 @@ const Hero = () => {
 
           {/* Call-to-Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <Button
+              variant="hero"
+              size="lg"
               className="px-8 py-4 text-lg font-semibold min-w-[200px]"
-              onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => navigate('/portfolio')}
             >
               View Portfolio
             </Button>
