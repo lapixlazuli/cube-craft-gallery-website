@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib/utils"
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium font-montserrat ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
@@ -18,6 +18,12 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // 3DimensionLabs custom variants
+        "neon-pink": "bg-neon-pink text-white hover:bg-neon-pink/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105",
+        "neon-cyan": "bg-neon-cyan text-foreground hover:bg-neon-cyan/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105",
+        "blue-violet": "bg-blue-violet text-white hover:bg-blue-violet/90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105",
+        "gradient-cube": "bg-gradient-cube text-white hover:opacity-90 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105",
+        "hero": "bg-neon-pink text-white border-2 border-transparent hover:bg-white hover:text-neon-pink hover:border-neon-pink transition-all duration-300 transform hover:scale-105 font-semibold",
       },
       size: {
         default: "h-10 px-4 py-2",

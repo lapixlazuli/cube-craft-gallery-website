@@ -1,42 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* 3DimensionLabs Design System - Colors MUST be HSL */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Brand Colors */
+    --background: 0 0% 93%; /* #EDEDED - Ice white/light gray */
+    --foreground: 0 0% 0%; /* #000000 - Solid black */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Hot Pink */
+    --primary: 335 100% 64%; /* #FF4F81 */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Neon Cyan */
+    --secondary: 181 100% 42%; /* #00D4D4 */
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Accent - Blue Violet */
+    --accent: 252 71% 73%; /* #9D7CFD */
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 0 0% 87%;
+    --input: 0 0% 87%;
+    --ring: 335 100% 64%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* 3D Design System Extensions */
+    --neon-pink: 335 100% 64%; /* #FF4F81 */
+    --neon-cyan: 181 100% 42%; /* #00D4D4 */
+    --blue-violet: 252 71% 73%; /* #9D7CFD */
+    --ice-background: 0 0% 93%; /* #EDEDED */
+    
+    /* Gradients */
+    --gradient-cube: linear-gradient(135deg, hsl(var(--neon-pink)), hsl(var(--blue-violet)));
+    --gradient-tech: linear-gradient(135deg, hsl(var(--blue-violet)), hsl(var(--neon-cyan)));
+    --gradient-eco: linear-gradient(135deg, hsl(var(--neon-cyan)), 142 69% 58%);
+    
+    /* Shadows */
+    --shadow-cube: 0 10px 30px -5px hsl(var(--neon-pink) / 0.3);
+    --shadow-glow: 0 0 20px hsl(var(--neon-cyan) / 0.4);
+    --shadow-subtle: 0 4px 12px hsl(0 0% 0% / 0.1);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +124,88 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
   }
+}
+
+@layer components {
+  /* 3D Cube Animation */
+  .cube-float {
+    animation: cubeFloat 6s ease-in-out infinite;
+  }
+  
+  .cube-rotate {
+    animation: cubeRotate 8s linear infinite;
+  }
+  
+  /* Hover Effects */
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-2px);
+  }
+  
+  .hover-scale {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Gradient Backgrounds */
+  .bg-gradient-cube {
+    background: var(--gradient-cube);
+  }
+  
+  .bg-gradient-tech {
+    background: var(--gradient-tech);
+  }
+  
+  .bg-gradient-eco {
+    background: var(--gradient-eco);
+  }
+}
+
+/* Keyframes for 3D animations */
+@keyframes cubeFloat {
+  0%, 100% { 
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  25% { 
+    transform: translateY(-10px) rotateX(5deg) rotateY(15deg);
+  }
+  50% { 
+    transform: translateY(-5px) rotateX(-5deg) rotateY(30deg);
+  }
+  75% { 
+    transform: translateY(-15px) rotateX(10deg) rotateY(45deg);
+  }
+}
+
+@keyframes cubeRotate {
+  0% { 
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% { 
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
 }

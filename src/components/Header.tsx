@@ -1,0 +1,76 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigation = [
+    { name: "Home", href: "#home" },
+    { name: "Portfolio", href: "#portfolio" },
+    { name: "Creative Dimensions", href: "#dimensions" },
+    { name: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="text-2xl font-bold font-montserrat text-foreground">
+              <span className="text-neon-pink">3D</span>
+              <span className="text-neon-cyan">imension</span>
+              <span className="text-blue-violet">Labs</span>
+            </div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            {navigation.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="text-foreground hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
+              >
+                {item.name}
+              </a>
+            ))}
+          </nav>
+
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-foreground hover:text-neon-pink"
+            >
+              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </Button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
+          <div className="md:hidden pb-4">
+            <div className="flex flex-col space-y-3">
+              {navigation.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-foreground hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default Header;

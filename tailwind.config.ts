@@ -18,6 +18,9 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'Arial', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +64,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// 3DimensionLabs Brand Colors
+				'neon-pink': 'hsl(var(--neon-pink))',
+				'neon-cyan': 'hsl(var(--neon-cyan))',
+				'blue-violet': 'hsl(var(--blue-violet))',
+				'ice-background': 'hsl(var(--ice-background))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
