@@ -47,6 +47,7 @@
     --neon-cyan: 181 100% 42%; /* #00D4D4 */
     --blue-violet: 252 71% 73%; /* #9D7CFD */
     --ice-background: 0 0% 93%; /* #EDEDED */
+    --tech-dimension: 204 65% 15%; /* #0D2A3D */
     
     /* Gradients */
     --gradient-cube: linear-gradient(135deg, hsl(var(--neon-pink)), hsl(var(--blue-violet)));
@@ -164,7 +165,11 @@
   .bg-gradient-tech {
     background: var(--gradient-tech);
   }
-  
+
+  .bg-tech-dimension {
+    background: hsl(var(--tech-dimension));
+  }
+
   .bg-gradient-eco {
     background: var(--gradient-eco);
   }
