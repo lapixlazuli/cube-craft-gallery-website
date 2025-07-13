@@ -5,42 +5,42 @@ const CreativeDimensions = () => {
   const dimensions = [
     {
       name: "Eco Dimension",
-      description: "Sustainable 3D printing solutions",
+      description: "Soluções de impressão 3D sustentáveis",
       icon: Leaf,
       color: "bg-gradient-eco",
       textColor: "text-green-700",
     },
     {
       name: "Tech Dimension", 
-      description: "Cutting-edge prototypes & gadgets",
+      description: "Protótipos e gadgets de ponta",
       icon: Cpu,
       color: "bg-gradient-tech",
       textColor: "text-blue-violet",
     },
     {
       name: "Architecture",
-      description: "Precision architectural models",
+      description: "Modelos arquitetônicos de precisão",
       icon: Building,
       color: "bg-muted",
       textColor: "text-foreground",
     },
     {
       name: "Reef Aquarium",
-      description: "Marine habitat innovations",
+      description: "Inovações para habitats marinhos",
       icon: Waves,
       color: "bg-neon-cyan",
       textColor: "text-white",
     },
     {
       name: "Luix Shrimps",
-      description: "Ornamental aquatic solutions",
+      description: "Soluções aquáticas ornamentais",
       icon: Fish,
       color: "bg-blue-violet",
       textColor: "text-white",
     },
     {
       name: "Creativity",
-      description: "Limitless artistic expression",
+      description: "Expressão artística sem limites",
       icon: Palette,
       color: "bg-gradient-cube",
       textColor: "text-white",
@@ -52,10 +52,10 @@ const CreativeDimensions = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
-            Creative <span className="text-neon-pink">Dimensions</span>
+            Dimensões <span className="text-neon-pink">Criativas</span>
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
-            Explore our diverse portfolio across multiple dimensions of creativity and innovation
+            Explore nosso portfólio diversificado em múltiplas dimensões de criatividade e inovação
           </p>
         </div>
 

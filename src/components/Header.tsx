@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "/#home" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Creative Dimensions", href: "/#dimensions" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Início", href: "/#home" },
+    { name: "Portfólio", href: "/portfolio" },
+    { name: "Dimensões Criativas", href: "/#dimensions" },
+    { name: "Contato", href: "/#contact" },
   ];
 
   return (

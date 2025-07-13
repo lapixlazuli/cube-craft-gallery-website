@@ -6,13 +6,13 @@ import portfolioEco from "@/assets/portfolio-eco.jpg";
 import portfolioTech from "@/assets/portfolio-tech.jpg";
 
 const Portfolio = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Todos");
 
   const portfolioItems = [
     {
       id: 1,
       title: "Modern Office Complex",
-      category: "Architecture",
+      category: "Arquitetura",
       image: portfolioArch,
       description: "Precision architectural model showcasing modern design",
     },
@@ -26,14 +26,14 @@ const Portfolio = () => {
     {
       id: 3,
       title: "IoT Prototype Case",
-      category: "Tech",
+      category: "Tecnologia",
       image: portfolioTech,
       description: "Custom housing for electronic prototypes",
     },
     {
       id: 4,
       title: "Residential Tower",
-      category: "Architecture",
+      category: "Arquitetura",
       image: portfolioArch,
       description: "Detailed scale model of residential complex",
     },
@@ -47,15 +47,15 @@ const Portfolio = () => {
     {
       id: 6,
       title: "Sensor Housing",
-      category: "Tech",
+      category: "Tecnologia",
       image: portfolioTech,
       description: "Weatherproof housing for environmental sensors",
     },
   ];
 
-  const filters = ["All", "Architecture", "Eco", "Tech", "Reef", "Creativity"];
+  const filters = ["Todos", "Arquitetura", "Eco", "Tecnologia", "Recife", "Criatividade"];
 
-  const filteredItems = activeFilter === "All" 
+  const filteredItems = activeFilter === "Todos"
     ? portfolioItems 
     : portfolioItems.filter(item => item.category === activeFilter);
 
@@ -64,10 +64,10 @@ const Portfolio = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
-            Our <span className="text-neon-cyan">Portfolio</span>
+            Nosso <span className="text-neon-cyan">Portfólio</span>
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto mb-8">
-            Discover the precision and innovation behind every project we create
+            Descubra a precisão e inovação por trás de cada projeto que criamos
           </p>
 
           {/* Filter Buttons */}
@@ -118,7 +118,7 @@ const Portfolio = () => {
                       {item.category}
                     </span>
                     <Button variant="ghost" size="sm" className="text-neon-cyan hover:text-neon-pink">
-                      View Details
+                      Ver Detalhes
                     </Button>
                   </div>
                 </div>
