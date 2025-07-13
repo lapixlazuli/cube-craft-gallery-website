@@ -11,11 +11,11 @@ const CreativeDimensions = () => {
       textColor: "text-green-700",
     },
     {
-      name: "Tech Dimension", 
+      name: "Tech Dimension",
       description: "Protótipos e gadgets de ponta",
       icon: Cpu,
-      color: "bg-gradient-tech",
-      textColor: "text-blue-violet",
+      color: "bg-tech-dimension",
+      textColor: "text-white",
     },
     {
       name: "Architecture",

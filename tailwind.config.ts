@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
 
 export default {
 	darkMode: ["class"],
@@ -68,9 +69,10 @@ export default {
 				// 3DimensionLabs Brand Colors
 				'neon-pink': 'hsl(var(--neon-pink))',
 				'neon-cyan': 'hsl(var(--neon-cyan))',
-				'blue-violet': 'hsl(var(--blue-violet))',
-				'ice-background': 'hsl(var(--ice-background))',
-			},
+                                'blue-violet': 'hsl(var(--blue-violet))',
+                                'ice-background': 'hsl(var(--ice-background))',
+                                'tech-dimension': 'hsl(var(--tech-dimension))',
+                        },
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -100,5 +102,5 @@ export default {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+       plugins: [tailwindcssAnimate],
 } satisfies Config;
