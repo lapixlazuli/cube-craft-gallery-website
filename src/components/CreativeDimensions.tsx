@@ -25,17 +25,10 @@ const CreativeDimensions = () => {
       textColor: "text-foreground",
     },
     {
-      name: "Reef Aquarium",
-      description: "Inovações para habitats marinhos",
+      name: "Aquatic Systems",
+      description: "Soluções para ecossistemas aquáticos",
       icon: Waves,
       color: "bg-neon-cyan",
-      textColor: "text-white",
-    },
-    {
-      name: "Luix Shrimps",
-      description: "Soluções aquáticas ornamentais",
-      icon: Fish,
-      color: "bg-blue-violet",
       textColor: "text-white",
     },
     {
