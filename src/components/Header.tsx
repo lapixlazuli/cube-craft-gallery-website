@@ -6,10 +6,10 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/#home" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Creative Dimensions", href: "#dimensions" },
-    { name: "Contact", href: "#contact" },
+    { name: "Creative Dimensions", href: "/#dimensions" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   return (
@@ -17,13 +17,13 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/#home" className="flex items-center">
             <div className="text-2xl font-bold font-montserrat text-foreground">
               <span className="text-neon-pink">3D</span>
               <span className="text-neon-cyan">imension</span>
               <span className="text-blue-violet">Labs</span>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
