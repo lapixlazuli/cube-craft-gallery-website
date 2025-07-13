@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+# 3DimensionLabs
 
-## Project info
+Este repositório contém o código do site da **3DimensionLabs**, uma galeria interativa de projetos e serviços de impressão 3D.
 
-**URL**: https://lovable.dev/projects/f1355c1f-078d-4df1-a066-0218270095ba
+## Sobre o projeto
 
-## How can I edit this code?
+O site apresenta a marca e seus trabalhos, permitindo que visitantes explorem diferentes categorias de atuação e entrem em contato para iniciar projetos personalizados. Ele foi desenvolvido com **React** e **TypeScript**, usando **Vite** para o bundling e **Tailwind CSS** com a biblioteca **shadcn-ui** para os componentes de interface.
 
-There are several ways of editing your application.
+## Principais seções
 
-**Use Lovable**
+- **Página inicial** (`/`): traz um cabeçalho responsivo, um herói com animações de cubos, a grade "Dimensões Criativas" e um formulário de contato que exibe toasts de confirmação.
+- **Portfólio** (`/portfolio`): apresenta projetos em cards filtráveis por categoria.
+- **404**: página exibida para rotas inexistentes.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f1355c1f-078d-4df1-a066-0218270095ba) and start prompting.
+## Estrutura do código
 
-Changes made via Lovable will be committed automatically to this repo.
+```
+src/
+  assets/        # imagens e outros arquivos estáticos
+  components/    # cabeçalho, rodapé, hero, etc.
+  pages/         # páginas renderizadas pelo React Router
+  hooks/         # hooks utilitários (ex.: useIsMobile)
+  lib/           # funções auxiliares
+```
 
-**Use your preferred IDE**
+## Como rodar o projeto
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Instale as dependências:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+npm install
+```
 
-Follow these steps:
+2. Inicie o servidor de desenvolvimento:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+3. Para gerar a versão de produção:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm run build
+```
 
-**Use GitHub Codespaces**
+## Tecnologias
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+- React 18
 - TypeScript
-- React
-- shadcn-ui
+- Vite
 - Tailwind CSS
+- shadcn-ui
+- React Router
+- React Query
 
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/f1355c1f-078d-4df1-a066-0218270095ba) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
