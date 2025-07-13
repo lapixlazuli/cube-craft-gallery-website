@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/geral/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,6 +19,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="/#home" className="flex items-center">
+            <img src={logo} alt="3DimensionLabs logo" className="h-8 w-8 mr-2" />
             <div className="text-2xl font-bold font-montserrat text-foreground">
               <span className="text-neon-pink">3D</span>
               <span className="text-neon-cyan">imension</span>
