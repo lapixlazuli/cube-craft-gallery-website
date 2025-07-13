@@ -8,7 +8,7 @@ O site apresenta a marca e seus trabalhos, permitindo que visitantes explorem di
 
 ## Principais seções
 
-- **Página inicial** (`/`): traz um cabeçalho responsivo, um herói com animações de cubos, a grade "Dimensões Criativas" e um formulário de contato que exibe toasts de confirmação.
+- **Página inicial** (`/`): traz um cabeçalho responsivo, um herói com animações de cubos, a grade "Dimensões" e um formulário de contato que exibe toasts de confirmação.
 - **Portfólio** (`/portfolio`): apresenta projetos em cards filtráveis por categoria.
 - **404**: página exibida para rotas inexistentes.
 

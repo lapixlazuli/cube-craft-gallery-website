@@ -52,10 +52,10 @@ const CreativeDimensions = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
-            Dimensões <span className="text-neon-pink">Criativas</span>
+            Dimensões
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
-            Explore nosso portfólio diversificado em múltiplas dimensões de criatividade e inovação
+            Explore nosso portfólio diversificado em múltiplas dimensões
           </p>
         </div>
 
