@@ -37,8 +37,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
-            Teve uma <span className="text-neon-pink">ideia</span>?{' '}
-            <span className="text-neon-cyan">Vamos torná-la real</span> em 3D
+            E aí, <span className="text-neon-pink">qual a sua ideia</span>?
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
             Conte-nos sobre sua ideia e ajudaremos a imprimi-la
