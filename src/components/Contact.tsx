@@ -19,8 +19,8 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Project Started!",
-      description: "We'll respond within 24 hours with next steps.",
+      title: "Projeto iniciado!",
+      description: "Responderemos em até 24 horas com os próximos passos.",
     });
     // Reset form
     setFormData({ name: "", email: "", message: "", file: null });
@@ -36,13 +36,13 @@ const Contact = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
-              Got an <span className="text-neon-pink">idea</span>?{" "}
-              <span className="text-neon-cyan">Let's make it real</span> in 3D
-            </h2>
-            <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
-              Tell us about your idea, and we'll help print it into existence
-            </p>
+          <h2 className="text-4xl md:text-5xl font-bold font-montserrat mb-6">
+            Teve uma <span className="text-neon-pink">ideia</span>?{' '}
+            <span className="text-neon-cyan">Vamos torná-la real</span> em 3D
+          </h2>
+          <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
+            Conte-nos sobre sua ideia e ajudaremos a imprimi-la
+          </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -50,10 +50,10 @@ const Contact = () => {
             <Card className="lg:col-span-2 border-2 hover:border-neon-pink transition-colors duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold font-montserrat">
-                  Start Your Project
+                  Inicie seu projeto
                 </CardTitle>
                 <CardDescription className="font-montserrat">
-                  Share your vision and we'll bring it to life with precision 3D printing
+                  Compartilhe sua visão e a transformaremos em realidade com impressão 3D de precisão
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -61,7 +61,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name" className="font-montserrat font-medium">
-                        Name *
+                        Nome *
                       </Label>
                       <Input
                         id="name"
@@ -70,7 +70,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         className="mt-1 border-2 focus:border-neon-pink font-montserrat"
-                        placeholder="Your name"
+                        placeholder="Seu nome"
                       />
                     </div>
                     <div>
@@ -91,7 +91,7 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="message" className="font-montserrat font-medium">
-                      Project Description *
+                      Descrição do Projeto *
                     </Label>
                     <Textarea
                       id="message"
@@ -99,13 +99,13 @@ const Contact = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="mt-1 border-2 focus:border-neon-pink font-montserrat min-h-[120px]"
-                      placeholder="Describe your idea, dimensions, materials, and any specific requirements..."
+                      placeholder="Descreva sua ideia, dimensões, materiais e quaisquer requisitos específicos..."
                     />
                   </div>
 
                   <div>
                     <Label htmlFor="file" className="font-montserrat font-medium">
-                      Attach Files (Optional)
+                      Anexar Arquivos (Opcional)
                     </Label>
                     <div className="mt-1 flex items-center space-x-4">
                       <Input
@@ -118,7 +118,7 @@ const Contact = () => {
                       <Upload className="text-muted-foreground" size={20} />
                     </div>
                     <p className="text-sm text-muted-foreground mt-1 font-montserrat">
-                      Upload sketches, 3D models, or reference images
+                      Envie esboços, modelos 3D ou imagens de referência
                     </p>
                   </div>
 
@@ -128,12 +128,12 @@ const Contact = () => {
                     size="lg" 
                     className="w-full font-montserrat font-semibold"
                   >
-                    Start Project
+                    Iniciar Projeto
                   </Button>
                 </form>
 
                 <p className="text-sm text-center text-muted-foreground mt-4 font-montserrat">
-                  We usually respond within 24 hours
+                  Normalmente respondemos em até 24 horas
                 </p>
               </CardContent>
             </Card>
@@ -144,7 +144,7 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
                     <Mail className="text-neon-pink" size={24} />
-                    <h3 className="font-bold font-montserrat">Email Us</h3>
+                    <h3 className="font-bold font-montserrat">Envie-nos um E-mail</h3>
                   </div>
                   <p className="text-muted-foreground font-montserrat">
                     hello@3dimensionlabs.com
@@ -156,13 +156,13 @@ const Contact = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
                     <Instagram className="text-neon-cyan" size={24} />
-                    <h3 className="font-bold font-montserrat">Follow Us</h3>
+                    <h3 className="font-bold font-montserrat">Siga-nos</h3>
                   </div>
                   <p className="text-muted-foreground font-montserrat mb-2">
                     @3dimensionlabs
                   </p>
                   <p className="text-sm text-muted-foreground font-montserrat">
-                    See our latest projects and behind-the-scenes content
+                    Veja nossos últimos projetos e bastidores
                   </p>
                 </CardContent>
               </Card>

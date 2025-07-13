@@ -2,10 +2,10 @@ import { Instagram, MessageSquare, Mail } from "lucide-react";
 
 const Footer = () => {
   const quickLinks = [
-    { name: "Home", href: "/#home" },
-    { name: "Portfolio", href: "/portfolio" },
-    { name: "Creative Dimensions", href: "/#dimensions" },
-    { name: "Contact", href: "/#contact" },
+    { name: "Início", href: "/#home" },
+    { name: "Portfólio", href: "/portfolio" },
+    { name: "Dimensões Criativas", href: "/#dimensions" },
+    { name: "Contato", href: "/#contact" },
   ];
 
   return (
@@ -20,17 +20,17 @@ const Footer = () => {
               <span className="text-blue-violet">Labs</span>
             </div>
             <p className="text-xl font-bold font-montserrat text-foreground italic mb-6">
-              "The dimension with no limits to creativity."
+              "A dimensão sem limites para a criatividade."
             </p>
             <p className="text-muted-foreground font-montserrat max-w-md">
-              We transform ideas into reality through precision 3D printing, innovative design, 
-              and limitless creativity. Quality under control, innovation without boundaries.
+              Transformamos ideias em realidade por meio de impressão 3D de precisão, design inovador
+              e criatividade sem limites. Qualidade sob controle, inovação sem fronteiras.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-bold font-montserrat text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-bold font-montserrat text-foreground mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Social Media */}
           <div>
-            <h3 className="font-bold font-montserrat text-foreground mb-4">Connect</h3>
+            <h3 className="font-bold font-montserrat text-foreground mb-4">Conecte-se</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Instagram className="text-neon-pink" size={20} />
@@ -69,14 +69,14 @@ const Footer = () => {
         <div className="border-t border-border mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-muted-foreground font-montserrat text-sm">
-              © 2024 3DimensionLabs. All rights reserved.
+              © 2025 Lapix Lazuli inc
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-muted-foreground hover:text-neon-pink transition-colors font-montserrat text-sm">
-                Privacy Policy
+                Política de Privacidade
               </a>
               <a href="#" className="text-muted-foreground hover:text-neon-cyan transition-colors font-montserrat text-sm">
-                Terms of Service
+                Termos de Serviço
               </a>
             </div>
           </div>

@@ -37,7 +37,7 @@ const Hero = () => {
           
           {/* Tagline */}
           <p className="text-lg md:text-xl font-montserrat mb-12 text-foreground">
-            On-demand printing. Quality under control.
+            Impressão sob demanda. Qualidade sob controle.
           </p>
 
           {/* Call-to-Action Buttons */}
@@ -48,7 +48,7 @@ const Hero = () => {
               className="px-8 py-4 text-lg font-semibold min-w-[200px]"
               onClick={() => navigate('/portfolio')}
             >
-              View Portfolio
+              Ver Portfólio
             </Button>
             
             <Button 
@@ -56,7 +56,7 @@ const Hero = () => {
               size="lg" 
               className="px-8 py-4 text-lg font-semibold min-w-[200px]"
             >
-              Buy Product
+              Comprar Produto
             </Button>
             
             <Button 
@@ -65,7 +65,7 @@ const Hero = () => {
               className="px-8 py-4 text-lg font-semibold min-w-[200px]"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              Create Product
+              Criar Produto
             </Button>
           </div>
         </div>
