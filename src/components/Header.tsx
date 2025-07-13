@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/geral/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const navigation = [
     { name: "Início", href: "/#home" },
@@ -14,12 +24,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header
+      className={cn(
+        "sticky top-0 z-50 backdrop-blur-sm transition-colors",
+        isScrolled ? "bg-background border-b border-border" : "bg-transparent"
+      )}
+    >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="/#home" className="flex items-center">
-            <img src={logo} alt="3DimensionLabs logo" className="h-8 w-8 mr-2" />
+            <img src={logo} alt="3DimensionLabs logo" className="h-12 w-12 mr-2" />
             <div className="text-2xl font-bold font-montserrat text-foreground">
               <span className="text-neon-pink">3D</span>
               <span className="text-neon-cyan">imension</span>
