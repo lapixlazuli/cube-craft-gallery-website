@@ -26,13 +26,13 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           {/* Main Headline */}
           <h1 className="text-5xl md:text-7xl font-bold font-montserrat mb-6 leading-tight">
-            We turn <span className="text-neon-pink">ideas</span> into{" "}
-            <span className="text-neon-cyan">reality</span>
+            Transformamos <span className="text-neon-pink">ideias</span> em{" "}
+            <span className="text-neon-cyan">realidade</span>
           </h1>
-          
+
           {/* Subheading */}
           <p className="text-xl md:text-2xl font-medium font-montserrat mb-4 text-muted-foreground">
-            with precision, quality, and innovation
+            uma dimensão sem limites para criatividade
           </p>
           
           {/* Tagline */}
