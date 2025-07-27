@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up">
           {/* Main Headline */}
-          <h1 className="text-6xl md:text-8xl font-bold font-montserrat mb-6 leading-tight text-outline-black">
+          <h1 className="text-6xl md:text-8xl font-bold font-montserrat mb-6 leading-tight">
             Transformamos <span className="text-neon-pink">ideias</span> em{" "}
             <span className="text-neon-cyan">realidade</span>
           </h1>
@@ -50,10 +50,10 @@ const Hero = () => {
               Ver Portfólio
             </Button>
             
-            <Button 
-              variant="neon-cyan" 
-              size="lg" 
-              className="px-8 py-4 text-lg font-semibold min-w-[200px]"
+            <Button
+              variant="neon-cyan"
+              size="lg"
+              className="px-8 py-4 text-lg font-semibold min-w-[200px] text-white"
             >
               Comprar Produto
             </Button>
