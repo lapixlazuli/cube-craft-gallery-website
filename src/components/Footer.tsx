@@ -23,8 +23,7 @@ const Footer = () => {
               "A dimensão sem limites para a criatividade."
             </p>
             <p className="text-muted-foreground font-montserrat max-w-md">
-              Transformamos ideias em realidade por meio de impressão 3D de precisão, design inovador
-              e criatividade sem limites. Qualidade sob controle, inovação sem fronteiras.
+              Transformamos ideias em realidade. Venha explorar nosso portfólio e descubra como podemos ajudar a dar vida à sua imaginação.
             </p>
           </div>
 
@@ -59,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-blue-violet" size={20} />
-                <span className="text-muted-foreground font-montserrat">hello@3dimensionlabs.com</span>
+                <span className="text-muted-foreground font-montserrat">contato.3dimensionlabs</span>
               </div>
             </div>
           </div>
@@ -72,11 +71,8 @@ const Footer = () => {
               © 2025 Lapix Lazuli inc
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-muted-foreground hover:text-neon-pink transition-colors font-montserrat text-sm">
-                Política de Privacidade
-              </a>
               <a href="#" className="text-muted-foreground hover:text-neon-cyan transition-colors font-montserrat text-sm">
-                Termos de Serviço
+                Suporte
               </a>
             </div>
           </div>

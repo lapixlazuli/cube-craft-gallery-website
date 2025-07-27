@@ -37,7 +37,6 @@ const Hero = () => {
           
           {/* Tagline */}
           <p className="text-lg md:text-xl font-montserrat mb-12 text-foreground">
-            Impressão sob demanda. Qualidade sob controle.
           </p>
 
           {/* Call-to-Action Buttons */}

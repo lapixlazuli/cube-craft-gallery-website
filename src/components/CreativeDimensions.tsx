@@ -4,36 +4,36 @@ import { Leaf, Cpu, Building, Waves, Palette, Fish } from "lucide-react";
 const CreativeDimensions = () => {
   const dimensions = [
     {
-      name: "Eco Dimension",
-      description: "Soluções de impressão 3D sustentáveis",
+      name: "Eco",
+      description: "Soluções com matéria-prima sustentável.",
       icon: Leaf,
       color: "bg-gradient-eco",
       textColor: "text-green-700",
     },
     {
-      name: "Tech Dimension",
-      description: "Protótipos e gadgets de ponta",
+      name: "Tech",
+      description: "Entusiastas por inovação tecnológica?+",
       icon: Cpu,
       color: "bg-tech-dimension",
       textColor: "text-white",
     },
     {
-      name: "Architecture",
-      description: "Modelos arquitetônicos de precisão",
+      name: "Construct",
+      description: "Modelos arquitetônicos.",
       icon: Building,
       color: "bg-muted",
       textColor: "text-foreground",
     },
     {
-      name: "Aquatic Systems",
-      description: "Soluções para ecossistemas aquáticos",
+      name: "Aquarium",
+      description: "Soluções para ecossistemas aquáticos.",
       icon: Waves,
       color: "bg-neon-cyan",
       textColor: "text-white",
     },
     {
       name: "Creativity",
-      description: "Expressão artística sem limites",
+      description: "A dimensão sem limites.",
       icon: Palette,
       color: "bg-gradient-cube",
       textColor: "text-white",
@@ -48,7 +48,7 @@ const CreativeDimensions = () => {
             Dimensões
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
-            Explore nosso portfólio diversificado em múltiplas dimensões
+            Explore nosso portfólio em múltiplos mundos.
           </p>
         </div>
 

@@ -40,7 +40,7 @@ const Contact = () => {
             E aí, <span className="text-neon-pink">qual a sua ideia</span>?
           </h2>
           <p className="text-xl text-muted-foreground font-montserrat max-w-3xl mx-auto">
-            Conte-nos sobre sua ideia e ajudaremos a imprimi-la
+            Conte sobre sua ideia e nós ajudaremos a torná-la realidade nessa dimensão.
           </p>
           </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
                   Inicie seu projeto
                 </CardTitle>
                 <CardDescription className="font-montserrat">
-                  Compartilhe sua visão e a transformaremos em realidade com impressão 3D de precisão
+                  Compartilhe sua ideia com o máximo de detalhes possíveis.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -98,7 +98,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="mt-1 border-2 focus:border-neon-pink font-montserrat min-h-[120px]"
-                      placeholder="Descreva sua ideia, dimensões, materiais e quaisquer requisitos específicos..."
+                      placeholder="Descreva sua ideia, dimensões (tamanho rsrs), materiais, objetivo com a peça e quaisquer requisitos específicos..."
                     />
                   </div>
 
@@ -127,7 +127,7 @@ const Contact = () => {
                     size="lg" 
                     className="w-full font-montserrat font-semibold"
                   >
-                    Iniciar Projeto
+                    Enviar
                   </Button>
                 </form>
 
@@ -139,17 +139,7 @@ const Contact = () => {
 
             {/* Contact Info */}
             <div className="space-y-6">
-              <Card className="border-2 hover:border-neon-cyan transition-colors duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <Mail className="text-neon-pink" size={24} />
-                    <h3 className="font-bold font-montserrat">Envie-nos um E-mail</h3>
-                  </div>
-                  <p className="text-muted-foreground font-montserrat">
-                    hello@3dimensionlabs.com
-                  </p>
-                </CardContent>
-              </Card>
+
 
               <Card className="border-2 hover:border-blue-violet transition-colors duration-300">
                 <CardContent className="p-6">
@@ -174,9 +164,6 @@ const Contact = () => {
                   </div>
                   <p className="text-muted-foreground font-montserrat mb-2">
                     @3dimensionlabs
-                  </p>
-                  <p className="text-sm text-muted-foreground font-montserrat">
-                    E aí, qual é a sua ideia?
                   </p>
                 </CardContent>
               </Card>
