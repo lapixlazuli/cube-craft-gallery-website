@@ -31,11 +31,15 @@ const Header = () => {
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-48">
           {/* Logo */}
           <a href="/#home" className="flex items-center">
-            <img src={logo} alt="3DimensionLabs logo" className="h-16 w-16 mr-2" />
-            <div className="text-2xl font-bold font-montserrat text-foreground">
+            <img
+              src={logo}
+              alt="3DimensionLabs logo"
+              className="h-48 w-48 mr-2"
+            />
+            <div className="text-[7.5rem] font-bold font-montserrat text-foreground text-outline-black">
               <span className="text-neon-pink">3D</span>
               <span className="text-neon-cyan">imension</span>
               <span className="text-blue-violet">Labs</span>
