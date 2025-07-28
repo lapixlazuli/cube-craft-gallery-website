@@ -30,7 +30,7 @@ const Header = () => {
         isScrolled ? "bg-background border-b border-border" : "bg-transparent"
       )}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-48">
           {/* Logo */}
           <a href="/#home" className="flex items-center">
@@ -52,7 +52,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-black text-5xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
+                className="text-black text-4xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
               >
                 {item.name}
               </a>
@@ -80,7 +80,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-black text-5xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
+                  className="text-black text-4xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
