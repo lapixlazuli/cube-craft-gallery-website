@@ -37,9 +37,9 @@ const Header = () => {
             <img
               src={logo}
               alt="3DimensionLabs logo"
-              className="h-48 w-48 mr-2"
+              className="h-28 w-22 mr-6 ml--100"
             />
-            <div className="text-[7.5rem] font-bold font-montserrat text-foreground text-outline-black">
+            <div className="text-[3.5rem] font-bold font-montserrat text-foreground">
               <span className="text-neon-pink">3D</span>
               <span className="text-neon-cyan">imension</span>
               <span className="text-blue-violet">Labs</span>
