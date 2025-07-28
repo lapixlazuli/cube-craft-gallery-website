@@ -37,7 +37,7 @@ const Header = () => {
             <img
               src={logo}
               alt="3DimensionLabs logo"
-              className="h-28 w-22 mr-6 ml--100"
+              className="h-28 w-22 mr-6 ml-4"
             />
             <div className="text-[3.5rem] font-bold font-montserrat text-foreground">
               <span className="text-neon-pink">3D</span>
@@ -52,7 +52,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-black text-4xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
+                className="text-black text-3xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
               >
                 {item.name}
               </a>
@@ -80,7 +80,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-black text-4xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
+                  className="text-black text-3xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
