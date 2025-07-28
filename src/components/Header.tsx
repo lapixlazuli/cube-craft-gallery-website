@@ -52,7 +52,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
+                className="text-black text-5xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat"
               >
                 {item.name}
               </a>
@@ -80,7 +80,7 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
+                  className="text-black text-5xl hover:text-neon-pink transition-colors duration-300 font-medium font-montserrat py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
